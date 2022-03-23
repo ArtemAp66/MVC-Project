@@ -14,3 +14,7 @@ function has_session($name) {
 function put_session($name, $value) {
     $_SESSION[$name] = $value;
 }
+
+function redirect($url){
+    return header('Location' . $url);
+}
